@@ -10,6 +10,7 @@
     <TodoItem v-for="todo in todos" :todo="todo" :key="todo.text" />
     <LifeCycle />
     <Once />
+    <Raw />
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import Inputs from "./components/Inputs";
 import TodoItem from "./components/TodoItem";
 import LifeCycle from "./components/LifeCycle";
 import Once from "./components/Once";
+import Raw from "./components/Raw";
 
 export default {
   name: "App",
@@ -30,6 +32,7 @@ export default {
     TodoItem,
     LifeCycle,
     Once,
+    Raw,
   },
   data() {
     return {
